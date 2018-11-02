@@ -17,3 +17,16 @@ rfc2csv {rfc number} {rfc number} {rfc number} ...
 rfc2csv 5280
 rfc2csv 5280 5019
 ```
+
+## Using Docker
+```bash
+docker run -ti digitorus/rfc2csv sh
+```
+After this you can use the `rfc2csv` command from above.
+
+## Reconnect Docker image
+```bash
+docker ps -a
+docker start {container id}
+docker attach {container id}
+```
